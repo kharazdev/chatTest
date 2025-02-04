@@ -1,15 +1,20 @@
 version: "3.1"
 
 intents:
+  - treatMeWell
   - greet
   - goodbye
   - affirm
   - deny
-  - mood_great
+  - mood_great  
   - mood_unhappy
-  - bot_challenge
+  - bot_chall enge
+  - bla_say
 
 responses:
+  utter_treatMeWell:
+  - text: "how do you want me to treat you?"
+
   utter_greet:
   - text: "Hey! How are you?"
 
@@ -28,6 +33,9 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_bla_say:
+  - text: "bla bla bla"
 
 session_config:
   session_expiration_time: 60
