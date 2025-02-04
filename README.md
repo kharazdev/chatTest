@@ -1,2 +1,2 @@
 # chatTest
-rasa chat
+rasa chat s
