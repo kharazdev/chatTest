@@ -2,43 +2,48 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: open-ended conversation
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-  - intent: treatMeWell
-  - action: utter_treatMeWell
-  - intent: bla_say
-  - action: utter_bla_say
+  - intent: start_chat
+  - action: action_generate_response
+    
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+#   - intent: treatMeWell
+#   - action: utter_treatMeWell
+#   - intent: bla_say
+#   - action: utter_bla_say
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-  - intent: treatMeWell
-  - action: utter_treatMeWell
-  - intent: bla_say
-  - action: utter_bla_say
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+#   - intent: treatMeWell
+#   - action: utter_treatMeWell
+#   - intent: bla_say
+#   - action: utter_bla_say
 
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-  - intent: treatMeWell
-  - action: utter_treatMeWell
-  - intent: bla_say
-  - action: utter_bla_say
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+#   - intent: treatMeWell
+#   - action: utter_treatMeWell
+#   - intent: bla_say
+#   - action: utter_bla_say
 
