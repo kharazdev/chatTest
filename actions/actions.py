@@ -71,8 +71,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 class ActionLightChatResponse(Action):
     def __init__(self):
         # Initialize DialoGPT-small
-        self.tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-small")
-        self.model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-small")
+        self.tokenizer = AutoTokenizer.from_pretrained("facebook/blenderbot-3B")
+        self.model = AutoModelForCausalLM.from_pretrained("facebook/blenderbot-3B")
 
     def name(self) -> Text:
         return "action_generate_response"
@@ -108,3 +108,18 @@ class ActionLightChatResponse(Action):
         dispatcher.utter_message(text=response)
 
         return []
+
+
+    #      models_to_test = [
+    #     "microsoft/DialoGPT-small",       # Lightweight and fast
+    #     "microsoft/DialoGPT-medium",      # Balanced performance
+    #     "microsoft/DialoGPT-large",       # Higher quality, slower
+    #     "EleutherAI/gpt-neo-1.3B",        # GPT-Neo, more powerful
+    #     "EleutherAI/gpt-neo-2.7B",        # Larger GPT-Neo
+    #     "EleutherAI/gpt-j-6B",            # GPT-J, comparable to GPT-3
+    #     "facebook/blenderbot-3B",         # BlenderBot for conversational tasks
+    #     "OpenAssistant/oasst-sft-1-pythia-12b",  # OpenAssistant fine-tuned
+    #     "lmsys/vicuna-7b-v1.3",           # Fine-tuned LLaMA for chat
+    #     "tiiuae/falcon-7b",               # High-performance Falcon model
+    # ]
+
